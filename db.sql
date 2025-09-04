@@ -1,7 +1,0 @@
-CREATE TABLE honeypots (
-    id SERIAL PRIMARY KEY,
-    token_address VARCHAR(42) NOT NULL UNIQUE,
-    is_honeypot BOOLEAN NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    reasons INTEGER[] NOT NULL DEFAULT ARRAY[0]
-);
