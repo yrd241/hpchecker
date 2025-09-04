@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://sniper:sniper@localhost1:5432/sniper_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://sniper:sniper@localhost:5432/sniper_db")
 
 # Create SQLAlchemy engine
 engine = create_engine(DATABASE_URL)
